@@ -6,7 +6,7 @@
     <sequenceFlow id="flow1" sourceRef="startevent1" targetRef="usertask4"/>
     <userTask activiti:candidateUsers="李四,王五" activiti:exclusive="true" id="usertask5" name="部门经理"/>
     <sequenceFlow id="flow2" sourceRef="usertask4" targetRef="usertask5"/>
-    <userTask activiti:candidateUsers="赵六" activiti:exclusive="true" id="usertask6" name="总经理"/>
+    <userTask activiti:assignee="赵六" activiti:candidateUsers="赵六" activiti:exclusive="true" id="usertask6" name="总经理"/>
     <sequenceFlow id="flow3" sourceRef="usertask5" targetRef="usertask6"/>
     <endEvent id="endevent1" name="End"/>
     <sequenceFlow id="flow4" sourceRef="usertask6" targetRef="endevent1"/>
